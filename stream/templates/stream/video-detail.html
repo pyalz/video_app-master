@@ -1,7 +1,15 @@
 {% extends 'stream/base.html' %}
 {% block content %}
+
     <div>
-        <img class="rounded-circle border-dark" src="{{ object.streamer.profile.image.url }}">
+        <style>
+            .profilepic {
+              width: 150px;
+              height: 120px;
+              background-color: rgb(243, 243, 239);
+            }
+        </style>
+        <img class="profilepic rounded-circle border-dark" src="{{ object.streamer.profile.image.url }}">
         <h12>{{ object.streamer.username }}</h12>
     </div>
     <div>
