@@ -8,7 +8,7 @@ class VidStream(models.Model):
     streamer = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=300)
     description = models.TextField(max_length=600)
-    playlist = models.TextField(max_length=60,blank=True)
+    playlist = models.TextField(blank=True)
     upload_date = models.DateTimeField(default=timezone.now)
     video = models.FileField(upload_to='')
 

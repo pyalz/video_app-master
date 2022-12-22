@@ -30,7 +30,7 @@ class VideoCreateView(LoginRequiredMixin   ,CreateView):
     model = VidStream
     success_url = "/"
     template_name = 'stream/post-video.html'
-    fields = ['title', 'description','video']
+    fields = ['title', 'description', 'playlist','video']
 
 
     #this is to make sure that the logged in user is the one to upload the content
